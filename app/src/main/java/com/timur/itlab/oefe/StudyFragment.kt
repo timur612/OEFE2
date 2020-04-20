@@ -11,7 +11,7 @@ import android.widget.Button
 import kotlinx.android.synthetic.main.study_fragment.view.*
 
 class StudyFragment: Fragment(){
-
+    val m = 0
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 
