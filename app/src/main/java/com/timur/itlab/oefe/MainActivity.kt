@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.navigation_online_meeting -> {
                 toolbar.title = "Конференции"
+                val confFragment = ConfFragment.newInstance()
+                openFragment(confFragment)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_study -> {
