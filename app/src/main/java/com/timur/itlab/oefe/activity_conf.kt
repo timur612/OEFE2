@@ -29,7 +29,7 @@ class activity_conf : AppCompatActivity(), Connector.IConnect {
         vc.showViewAt(videoFrame,0,0,videoFrame.width,videoFrame.height)
     }
     fun Connect(v: View){
-        val token:String = "cHJvdmlzaW9uAHVzZXIxQDc2ZWY4NC52aWR5by5pbwA2Mzc1NDY3OTU0NwAAYjM5YTNiZThmZThiNTczNGMzMWY3OTdhOTU0ZmNjYjgyZTU5OWUwOGJmNjFhOGYyMzQ4MGJhZjIwYzRmY2I5NDc0ZGNjNmEwYWNiZmVjMGM4NjQ3NGVjOTA5MmJmMTQw"
+        val token:String = "cHJvdmlzaW9uAHVzZXIxQDc2ZWY4NC52aWR5by5pbwA2Mzc1NDY4OTA3OAAAY2ViNDM1M2Q3NjVlMzExODMyYzU1OTdhZTU2YzZmMmNlYjY4Y2MxYTYzZjQ1OGJlOWQ0ZTY1ZTlmYzFlNjA5YzRlYzI4Y2JmODdiNWYyZmYzYTBlMTc4Njg3ODU5MjQ3"
         vc.connect("prod.vidyo.io",token,"DemoUser","DemoRoom",this)
 
     }
@@ -37,14 +37,14 @@ class activity_conf : AppCompatActivity(), Connector.IConnect {
         vc.disconnect()
     }
     override fun onDisconnected(p0: Connector.ConnectorDisconnectReason?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+         //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun onFailure(p0: Connector.ConnectorFailReason?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+         //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun onSuccess() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+         //To change body of created functions use File | Settings | File Templates.
     }
 }
