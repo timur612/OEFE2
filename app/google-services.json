@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "755185535047",
+    "firebase_url": "https://oefe-245d4.firebaseio.com",
+    "project_id": "oefe-245d4",
+    "storage_bucket": "oefe-245d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755185535047:android:ac7968bbcb44c7a792c962",
+        "android_client_info": {
+          "package_name": "com.timur.itlab.oefe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755185535047-5716gkhh04hr8ccntpd8lf7kuk9e28ll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWSgeXjzmWml83KK0bE5c-48eRMFvGzmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755185535047-5716gkhh04hr8ccntpd8lf7kuk9e28ll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
