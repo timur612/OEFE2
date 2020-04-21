@@ -37,14 +37,14 @@ class activity_conf : AppCompatActivity(), Connector.IConnect {
         vc.disconnect()
     }
     override fun onDisconnected(p0: Connector.ConnectorDisconnectReason?) {
-         //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onFailure(p0: Connector.ConnectorFailReason?) {
-         //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onSuccess() {
-         //To change body of created functions use File | Settings | File Templates.
+
     }
 }
