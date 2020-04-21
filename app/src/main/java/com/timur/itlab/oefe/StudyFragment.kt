@@ -11,24 +11,23 @@ import android.widget.Button
 import kotlinx.android.synthetic.main.study_fragment.view.*
 
 class StudyFragment: Fragment(){
-    val m = 0
-    val err = 1
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 
 
         val view: View = inflater!!.inflate(R.layout.study_fragment, container, false)
 
-        view.button2.setOnClickListener { view ->
-            activity?.let{
-                val intent = Intent (it, StudyActivity::class.java)
-                it.startActivity(intent)
-            }
-        }
         view.button.setOnClickListener { view ->
             Log.d("btn1", "Selected")
         }
 
+        view.button2.setOnClickListener { view ->
+            activity?.let{
+                val intent = Intent (it, StudyActivity::class.java)
+                it.startActivity(intent) //включает новую активити с Заданиями
+            }
+        }
         // Return the fragment view/layout
         return view
     }
