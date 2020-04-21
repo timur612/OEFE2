@@ -22,7 +22,7 @@ class ConfFragment: Fragment(){
 
         view.button3.setOnClickListener { view ->
             activity?.let{
-                val intent = Intent (it, StudyActivity::class.java)
+                val intent = Intent (it, activity_conf::class.java)
                 it.startActivity(intent) //включает новую активити с Конференцией
             }
         }
