@@ -16,6 +16,13 @@ class activity_conf : AppCompatActivity(), Connector.IConnect {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_conf)
 
+        val actionbar = supportActionBar
+        //set actionbar title
+        actionbar!!.title = "Урок Математика"
+        //set back button
+        actionbar.setDisplayHomeAsUpEnabled(true)
+        actionbar.setDisplayHomeAsUpEnabled(true)
+
         ConnectorPkg.setApplicationUIContext(this)
         ConnectorPkg.initialize()
 
@@ -46,5 +53,9 @@ class activity_conf : AppCompatActivity(), Connector.IConnect {
 
     override fun onSuccess() {
 
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

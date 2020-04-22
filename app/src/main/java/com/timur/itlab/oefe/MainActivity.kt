@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.navigation_profile -> {
                 toolbar.title = "Профиль"
+                val profFragment = ProfileFragment.newInstance()
+                openFragment(profFragment)
                 return@OnNavigationItemSelectedListener true
             }
         }

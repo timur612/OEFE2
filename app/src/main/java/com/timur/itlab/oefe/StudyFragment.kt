@@ -20,7 +20,7 @@ class StudyFragment: Fragment(){
 
         view.button.setOnClickListener { view ->
             activity?.let{
-                val intent = Intent (it, ReaderActivity::class.java)
+                val intent = Intent (it, ListReaderActivity::class.java)
                 it.startActivity(intent) //включает новую активити с Заданиями
             }
         }
