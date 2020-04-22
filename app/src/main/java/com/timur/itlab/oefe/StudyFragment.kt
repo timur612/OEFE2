@@ -19,7 +19,10 @@ class StudyFragment: Fragment(){
         val view: View = inflater!!.inflate(R.layout.study_fragment, container, false)
 
         view.button.setOnClickListener { view ->
-            Log.d("btn1", "Selected")
+            activity?.let{
+                val intent = Intent (it, ReaderActivity::class.java)
+                it.startActivity(intent) //включает новую активити с Заданиями
+            }
         }
 
         view.button2.setOnClickListener { view ->
