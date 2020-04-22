@@ -14,15 +14,15 @@
     <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_marginTop="36dp"
-            android:layout_marginEnd="55dp" android:text="Захаров Тимур"
+            android:layout_height="wrap_content" android:layout_marginTop="16dp"
+            android:layout_marginEnd="60dp" android:text="Захаров Тимур"
             android:textSize="25sp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
     <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_marginTop="100dp"
-            android:layout_marginEnd="164dp" android:text="9 класс"
+            android:layout_height="wrap_content" android:layout_marginTop="85dp"
+            android:layout_marginEnd="160dp" android:text="9 класс"
             android:textSize="18sp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
     <androidx.cardview.widget.CardView
@@ -90,8 +90,8 @@
     <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_marginTop="72dp"
-            android:layout_marginEnd="120dp" android:text="Школа ФТЛ"
+            android:layout_height="wrap_content" android:layout_marginTop="52dp"
+            android:layout_marginEnd="116dp" android:text="Школа ФТЛ"
             android:textSize="20sp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
     <androidx.cardview.widget.CardView
@@ -108,4 +108,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:text="Последние действия" android:textSize="20sp"/>
     </androidx.cardview.widget.CardView>
+    <View
+            android:id="@+id/view_dostij" android:layout_height="291dp" android:layout_marginStart="8dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent" >
+        <include android:id="@+id/dostij"
+                 android:visibility="gone"
+                 layout="@layout/dostij_include_profile"/>
+    </View>
 </androidx.constraintlayout.widget.ConstraintLayout>

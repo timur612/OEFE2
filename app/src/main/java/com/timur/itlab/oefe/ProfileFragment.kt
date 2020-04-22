@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.study_fragment.view.*
 
 class ProfileFragment: Fragment(){
@@ -18,7 +19,10 @@ class ProfileFragment: Fragment(){
 
         val view: View = inflater!!.inflate(R.layout.fragment_profile, container, false)
 
-
+        textView14.setOnClickListener{
+            dostij.visibility = View.VISIBLE
+            cardView.visibility = View.INVISIBLE
+        }
         // Return the fragment view/layout
         return view
     }
