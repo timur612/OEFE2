@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "755185535047-t15n166dt8evsv8fn1rg7c8gjv3b7v6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timur.itlab.oefe",
+            "certificate_hash": "f442fed4a4911667c7062158b24e4eaaac16b741"
+          }
+        },
+        {
           "client_id": "755185535047-5716gkhh04hr8ccntpd8lf7kuk9e28ll.apps.googleusercontent.com",
           "client_type": 3
         }
