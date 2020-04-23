@@ -17,7 +17,7 @@
                 android:id="@+id/button4"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-
+                android:backgroundTint="@color/blue_cyanDark"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="40dp" android:background="@drawable/button_circle"
                 android:onClick="Start" android:text="Start"
@@ -29,7 +29,7 @@
                 android:id="@+id/button5"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-
+                android:backgroundTint="@color/blue_cyanDark"
                 android:layout_marginLeft="20dp" android:layout_marginTop="40dp"
                 android:background="@drawable/button_circle" android:onClick="Connect"
                 android:text="Connect" app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
                 android:id="@+id/button6"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
-
+                android:backgroundTint="@color/blue_cyanDark"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="40dp" android:background="@drawable/button_circle"
                 android:onClick="Disconnect" android:text="Disconnect"

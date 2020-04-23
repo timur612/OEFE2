@@ -16,7 +16,7 @@ class activity_BookMark : AppCompatActivity() {
         webView.webViewClient = MyWebViewClient()
 
         loadpage_but.setOnClickListener(){
-            webView.loadUrl("https://sgo.e-yakutia.ru/angular/school/studentdiary/")
+            webView.loadUrl("sgo.e-yakutia.ru/")
         }
 
     }
