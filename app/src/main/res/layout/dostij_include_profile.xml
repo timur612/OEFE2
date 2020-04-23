@@ -1,37 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
                                                    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
-            android:layout_width="325dp"
-            android:layout_height="174dp" android:layout_marginStart="8dp"
-            android:layout_marginTop="248dp" android:layout_marginEnd="8dp"
+            android:id="@+id/dostij_card"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="300dp"
+            android:visibility="gone"
             app:cardCornerRadius="20dp"
-            app:contentPadding="5dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            app:contentPadding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="50dp"
-                android:layout_height="50dp" android:layout_marginLeft="160dp" android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/olimp_if"/>
+                android:layout_height="50dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/olimp_if" />
+
         <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:text="Достижения" android:textSize="20sp"/>
+                android:layout_height="wrap_content"
+                android:text="Достижения"
+                android:textSize="20sp" />
+
         <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="50dp" android:layout_height="50dp"
-                android:layout_marginLeft="25dp" android:layout_marginTop="30dp" app:srcCompat="@drawable/codewars"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/codewars" />
+
         <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="50dp"
-                android:layout_height="50dp" android:layout_marginLeft="90dp" android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/dos_npk"/>
+                android:layout_height="50dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/dos_npk" />
+
         <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="50dp"
-                android:layout_height="50dp" android:layout_marginLeft="235dp" android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/sirius"/>
+                android:layout_height="50dp"
+                android:layout_marginLeft="235dp"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/sirius" />
+
+        <TextView
+                android:id="@+id/close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:text="^"
+                android:textSize="24sp" />
     </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

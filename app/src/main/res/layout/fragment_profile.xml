@@ -1,122 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
-                                                   android:layout_width="match_parent"
-                                                   android:layout_height="match_parent">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bbb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
 
     <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="111dp" android:layout_height="97dp"
-            android:layout_marginLeft="5dp" android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/profile_photo"/>
+            android:layout_width="111dp"
+            android:layout_height="97dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile_photo" />
+
     <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_marginTop="16dp"
-            android:layout_marginEnd="60dp" android:text="Захаров Тимур"
-            android:textSize="25sp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="60dp"
+            android:text="Захаров Тимур"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_marginTop="85dp"
-            android:layout_marginEnd="160dp" android:text="9 класс"
-            android:textSize="18sp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="160dp"
+            android:text="9 класс"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.cardview.widget.CardView
             android:layout_width="217dp"
             android:layout_height="141dp"
-            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
-            app:cardCornerRadius="20dp" app:contentPadding="15dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.921" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.203">
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardCornerRadius="20dp"
+            app:contentPadding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.921"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.203">
+
         <TextView
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_marginTop="5dp"
-                android:text="Дата рождения: 22.04.04"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Дата рождения: 22.04.04" />
+
         <TextView
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="Достижений: 7"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Достижений: 7" />
+
         <TextView
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_marginTop="75dp" android:text="Опозданий: 0"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="Опозданий: 0" />
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="350dp"
-            android:layout_height="114dp" android:layout_marginStart="8dp"
-            android:layout_marginTop="288dp" android:layout_marginEnd="8dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="288dp"
+            android:layout_marginEnd="8dp"
             app:cardCornerRadius="20dp"
             app:contentPadding="15dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.488"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-    >
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
         <TextView
                 android:id="@+id/textView14"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_marginLeft="295dp" android:layout_marginTop="55dp"
-                android:text=". . . " android:textSize="18sp" android:textStyle="bold"/>
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="55dp"
+                android:text=". . . "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
         <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="50dp"
-                android:layout_height="50dp" android:layout_marginLeft="155dp" android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/olimp_if"/>
+                android:layout_height="50dp"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/olimp_if" />
+
         <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:text="Достижения" android:textSize="20sp"/>
+                android:layout_height="wrap_content"
+                android:text="Достижения"
+                android:textSize="20sp" />
+
         <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="50dp" android:layout_height="50dp"
-                android:layout_marginLeft="10dp" android:layout_marginTop="30dp" app:srcCompat="@drawable/codewars"/>
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/codewars" />
+
         <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="50dp"
-                android:layout_height="50dp" android:layout_marginLeft="80dp" android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/dos_npk"/>
+                android:layout_height="50dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/dos_npk" />
+
         <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="50dp"
-                android:layout_height="50dp" android:layout_marginLeft="230dp" android:layout_marginTop="30dp"
-                app:srcCompat="@drawable/sirius"/>
+                android:layout_height="50dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/sirius" />
+
     </androidx.cardview.widget.CardView>
+
     <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_marginTop="52dp"
-            android:layout_marginEnd="116dp" android:text="Школа ФТЛ"
-            android:textSize="20sp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="116dp"
+            android:text="Школа ФТЛ"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
     <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
             android:layout_width="350dp"
             android:layout_height="159dp"
-            android:layout_marginStart="8dp" android:layout_marginTop="420dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="436dp"
             android:layout_marginEnd="8dp"
             app:cardCornerRadius="20dp"
-            app:contentPadding="15dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51" app:layout_constraintStart_toStartOf="parent"
+            app:contentPadding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:text="Получил достижение!" />
+
         <TextView
                 android:id="@+id/textView16"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:text="Последние действия" android:textSize="20sp"/>
+                android:layout_height="wrap_content"
+                android:text="Последние действия"
+                android:textSize="20sp" />
+
+        <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Решил задачу 2+2" />
     </androidx.cardview.widget.CardView>
-    <View
-            android:id="@+id/view_dostij" android:layout_height="291dp" android:layout_marginStart="8dp"
-            android:layout_marginTop="220dp"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="match_parent" >
-        <include android:id="@+id/dostij"
-                 android:visibility="gone"
-                 layout="@layout/dostij_include_profile"/>
-    </View>
+
+    <include
+            android:id="@+id/dostij"
+            layout="@layout/dostij_include_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="300dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

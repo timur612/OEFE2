@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.navigation_bookmark -> {
                 toolbar.title = "Электронный журнал"
+                val bookmarkFragment = BookMarkFragment.newInstance()
+                openFragment(bookmarkFragment)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_online_meeting -> {
