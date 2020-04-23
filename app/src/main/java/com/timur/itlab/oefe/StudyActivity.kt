@@ -43,7 +43,7 @@ class StudyActivity : AppCompatActivity() {
         llbottom3.setOnDragListener(dragListener)
 
         dragView.setOnLongClickListener{
-            val clipText = "This is our ClipData"
+            val clipText = "Ты молодец!"
             val item = ClipData.Item(clipText)
             val mimeTypes = arrayOf(ClipDescription.MIMETYPE_TEXT_PLAIN)
             val data = ClipData(clipText, mimeTypes, item)
@@ -55,7 +55,7 @@ class StudyActivity : AppCompatActivity() {
             true
         }
         dragView2.setOnLongClickListener{
-            val clipText = "This is our ClipData"
+            val clipText = "Ты молодец!"
             val item = ClipData.Item(clipText)
             val mimeTypes = arrayOf(ClipDescription.MIMETYPE_TEXT_PLAIN)
             val data = ClipData(clipText, mimeTypes, item)
@@ -67,7 +67,7 @@ class StudyActivity : AppCompatActivity() {
             true
         }
         dragView3.setOnLongClickListener{
-            val clipText = "This is our ClipData"
+            val clipText = "Ты молодец!"
             val item = ClipData.Item(clipText)
             val mimeTypes = arrayOf(ClipDescription.MIMETYPE_TEXT_PLAIN)
             val data = ClipData(clipText, mimeTypes, item)
@@ -104,7 +104,7 @@ class StudyActivity : AppCompatActivity() {
                 val v = event.localState as View
                 val owner = v.parent as ViewGroup
                 val destination = view as CardView
-                    if (v.dragView2 != null){
+                    if (v.dragView != null){
                         val dragData = item.text
                         Toast.makeText(this, dragData, Toast.LENGTH_SHORT).show()
 
@@ -119,7 +119,7 @@ class StudyActivity : AppCompatActivity() {
 
                         true
                     }else{
-
+                        Toast.makeText(this, "Подумай еще раз!", Toast.LENGTH_SHORT).show()
                         lltop.setBackgroundColor(Color.RED)
                         false
                     }

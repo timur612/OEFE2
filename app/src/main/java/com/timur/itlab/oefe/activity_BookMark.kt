@@ -13,12 +13,23 @@ class activity_BookMark : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity__book_mark)
 
+        val actionbar = supportActionBar
+        //set actionbar title
+        actionbar!!.title = "Журнал"
+        //set back button
+        actionbar.setDisplayHomeAsUpEnabled(true)
+        actionbar.setDisplayHomeAsUpEnabled(true)
+
         webView.webViewClient = MyWebViewClient()
 
         loadpage_but.setOnClickListener(){
             webView.loadUrl("https://sgo.e-yakutia.ru/angular/school/studentdiary/")
         }
 
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
 

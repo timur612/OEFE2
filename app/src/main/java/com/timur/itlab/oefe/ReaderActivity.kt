@@ -41,8 +41,7 @@ class ReaderActivity : AppCompatActivity() {
         gsReference.getFile(localFile)
             .addOnSuccessListener(OnSuccessListener<FileDownloadTask.TaskSnapshot> {
                 // Successfully downloaded data to local file
-                pdf.fromAsset("test2.pdf").load()//загрузка файла из Firebase
-
+                pdf.fromFile(localFile).load()//загрузка файла из Firebase
             }).addOnFailureListener(OnFailureListener {
                 // Handle failed download
             })
