@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.navigation_home -> {
                 toolbar.title = "Главная"
+                val mainFragment = MainFragment.newInstance()
+                openFragment(mainFragment)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_bookmark -> {
