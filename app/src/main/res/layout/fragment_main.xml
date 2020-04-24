@@ -18,86 +18,92 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
-            <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
-                    android:gravity="center"
-                    android:text="Календарь олимпиад" />
-
-            <CalendarView
-                    android:id="@+id/calendarView"
-                    android:layout_width="337dp"
-                    android:layout_height="294dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp" />
-
             <androidx.cardview.widget.CardView
-                    android:layout_width="320dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="329dp"
+                    android:layout_height="207dp"
                     android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    app:cardCornerRadius="20dp"
-                    app:contentPadding="10dp">
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#C1BEBE"
+                    app:cardCornerRadius="10dp"
+                    app:contentPadding="2sp">
 
-                <TextView
-                        android:id="@+id/textView20"
-                        android:layout_width="285dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="10dp"
-                        android:text="СИРИУС.ДОМА: РАСПИСАНИЕ НА 23 АПРЕЛЯ"
-                        android:textSize="20sp" />
-
-                <TextView
-                        android:id="@+id/textView21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="220dp"
-                        android:text="Центр третью неделю поддерживает вас во время самоизоляции полезными лекциями и мастер-классами. Мы провели уже 60 трансляций, на онлайн-занятиях побывало более 22 700 человек. Не сбавляем обороты и рассказываем, чем займемся с вами завтра. Прямые эфиры открыты для всех."
-                        android:textSize="15sp" />
 
                 <ImageView
-                        android:id="@+id/imageView7"
+                        android:id="@+id/imageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:alpha="0.9"
+                        app:srcCompat="@drawable/sir_lit" />
+
+                <TextView
+                        android:id="@+id/text_card_zag"
+                        android:layout_width="285dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="125dp"
+
+                        android:text="Прием заявок на августовскую программу «Литературное творчество» центра «Сириус»"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                <TextView
+                        android:id="@+id/textView20"
                         android:layout_width="wrap_content"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="70dp"
-                        app:srcCompat="@drawable/sirius_news" />
+                        android:layout_height="wrap_content"
+                        android:text="Новости | 23 апреля"
+                        android:textColor="@color/white"
+                        android:fontFamily="monospace"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                     android:layout_width="320dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="249dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="#192C4C"
                     app:cardCornerRadius="20dp"
-                    app:contentPadding="10dp">
-
-                <TextView
-                        android:id="@+id/textView20"
-                        android:layout_width="285dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="5dp"
-                        android:text="Регистрация финалистов Интернет-олимпиады по физике"
-                        android:textSize="20sp" />
-
-                <TextView
-                        android:id="@+id/textView21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="220dp"
-                        android:text="Участникам заключительного этапа Интернет-олимпиады по физике необходимо зарегистрироваться на площадку очного тура «Заключительный тур в режиме прокторинга». Напоминаем, что финал пройдет 11 мая 2020 года в дистанционном формате.  Состязание входит в Перечень олимпиад школьников Минобрнауки России. Ему присвоен первый уровень. Победители и призеры заключительного этапа могут получить льготы при поступлении в вузы."
-                        android:textSize="15sp" />
+                    app:contentPadding="10dp"
+                    android:background="@drawable/card_click">
 
                 <ImageView
                         android:id="@+id/imageView7"
                         android:layout_width="wrap_content"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="70dp"
-                        app:srcCompat="@drawable/physics_olimp" />
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/mgotu" />
+
+                <TextView
+                        android:id="@+id/text_card_zag"
+                        android:layout_width="285dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="140dp"
+                        android:text="Победители и призеры международной открытой олимпиады школьников «МГОТУ» по трем предметам"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="200dp"
+                        android:text="Олимпиада проводится для учащихся 10-11 классов из России и зарубежных стран."
+                        android:textColor="#C5C5C5"
+                        android:textSize="10sp" />
+
+                <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Новости | 23 апреля"
+                        android:textColor="@color/white"
+                        android:fontFamily="monospace"
+                        android:textSize="10sp" />
 
             </androidx.cardview.widget.CardView>
 
