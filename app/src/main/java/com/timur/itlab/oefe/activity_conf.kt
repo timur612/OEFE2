@@ -36,7 +36,7 @@ class activity_conf : AppCompatActivity(), Connector.IConnect {
         vc.showViewAt(videoFrame,0,0,videoFrame.width,videoFrame.height)
     }
     fun Connect(v: View){
-        val token:String = "cHJvdmlzaW9uAHVzZXIxQDc2ZWY4NC52aWR5by5pbwA2Mzc1NDY4OTA3OAAAY2ViNDM1M2Q3NjVlMzExODMyYzU1OTdhZTU2YzZmMmNlYjY4Y2MxYTYzZjQ1OGJlOWQ0ZTY1ZTlmYzFlNjA5YzRlYzI4Y2JmODdiNWYyZmYzYTBlMTc4Njg3ODU5MjQ3"
+        val token:String = "cHJvdmlzaW9uAHVzZXIxQDc2ZWY4NC52aWR5by5pbwA2Mzc1NDkyMjM0OQAAYmE5MDdkYjE4NzM3MGIzZGFiN2Q4NWRiNjhmN2FlZTg1NTIxMWQ5NGZmNDExNzM3OGYyMWRmM2QwZDQ5YTkzM2UyYTNmMTBiY2UwM2QyNmQyODQ5ZTU5MzRhZGUxODIz"
         vc.connect("prod.vidyo.io",token,"DemoUser","DemoRoom",this)
 
     }

@@ -116,7 +116,7 @@ class StudyActivity : AppCompatActivity() {
                         destination.addView(v)
                         //destination.visibility = View.INVISIBLE
                         v.visibility = View.VISIBLE
-
+                        lltop.setBackgroundColor(Color.rgb(86,115,171))
                         true
                     }else{
                         Toast.makeText(this, "Подумай еще раз!", Toast.LENGTH_SHORT).show()
